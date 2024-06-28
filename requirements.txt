@@ -99,7 +99,6 @@ marshmallow==3.20.1
 marshmallow-enum==1.5.1
 matplotlib==3.7.1
 matplotlib-inline==0.1.6
-Mensajes @ file:///C:/WEBSITES/Modulos%20y%20Paquetes/dist/Mensajes-2.0.tar.gz
 monotonic==1.6
 moviepy==1.0.3
 multidict==6.0.4
