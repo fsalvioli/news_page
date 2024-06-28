@@ -101,19 +101,25 @@ WSGI_APPLICATION = "news_page.wsgi.application"
 #        "NAME": BASE_DIR / "db.sqlite3",
 #    }
 #}
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#        'HOST': os.getenv("DBHOST"),  # Accede a la variable de entorno DBHOST
+#        'NAME': os.getenv("NAME"),    # Accede a la variable de entorno NAME
+#        'USER': os.getenv("USER"),    # Accede a la variable de entorno USER
+#        'PASSWORD': os.getenv("PASSWORD"),  # Accede a la variable de entorno PASSWORD
+#        'PORT': os.getenv("DBPORT"),  # Accede a la variable de entorno DBPORT
+#    }
+#}
+
+import dj_database_url
+SUPABASE_DB_URL = os.environ.get("SUPABASE_DB_URL")
+# Use the Supabase database configuration
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'HOST': os.getenv("DBHOST"),  # Accede a la variable de entorno DBHOST
-        'NAME': os.getenv("NAME"),    # Accede a la variable de entorno NAME
-        'USER': os.getenv("USER"),    # Accede a la variable de entorno USER
-        'PASSWORD': os.getenv("PASSWORD"),  # Accede a la variable de entorno PASSWORD
-        'PORT': os.getenv("DBPORT"),  # Accede a la variable de entorno DBPORT
-    }
+    "default": dj_database_url.config(
+        default=SUPABASE_DB_URL, conn_max_age=600
+    )
 }
-
-
-
 
 
 
