@@ -1,0 +1,27 @@
+
+{% extends 'core/base.html' %}
+{% load static %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'core/css/articulos.css' %}">
+{% endblock %}
+
+{% block content %}
+    <section id="articulos">
+        {% for articulo in articulos %}
+            <div class="card">
+                <h2>{{ articulo.titulo }}</h2>
+                <div class="card-content">
+                    {% if articulo.imagenes %}
+                        <img src="{{ articulo.imagenes.url }}" alt="{{ articulo.titulo }}">
+                    {% endif %}
+                    {% if articulo.articulos %}
+                        <p>{{ articulo.articulos|safe }}</p>
+                    {% endif %}
+                    {% if articulo.enlaces_formulario %}
+                        <a href="{{ historia.enlaces }}" class="btn">Conoce más!</a>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+{% endblock %}

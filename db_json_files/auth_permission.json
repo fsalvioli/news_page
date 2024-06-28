@@ -1,0 +1,362 @@
+[
+    {
+        "codename": "add_logentry",
+        "content_type_id": 1,
+        "id": 1,
+        "name": "Can add log entry"
+    },
+    {
+        "codename": "change_logentry",
+        "content_type_id": 1,
+        "id": 2,
+        "name": "Can change log entry"
+    },
+    {
+        "codename": "delete_logentry",
+        "content_type_id": 1,
+        "id": 3,
+        "name": "Can delete log entry"
+    },
+    {
+        "codename": "view_logentry",
+        "content_type_id": 1,
+        "id": 4,
+        "name": "Can view log entry"
+    },
+    {
+        "codename": "add_permission",
+        "content_type_id": 2,
+        "id": 5,
+        "name": "Can add permission"
+    },
+    {
+        "codename": "change_permission",
+        "content_type_id": 2,
+        "id": 6,
+        "name": "Can change permission"
+    },
+    {
+        "codename": "delete_permission",
+        "content_type_id": 2,
+        "id": 7,
+        "name": "Can delete permission"
+    },
+    {
+        "codename": "view_permission",
+        "content_type_id": 2,
+        "id": 8,
+        "name": "Can view permission"
+    },
+    {
+        "codename": "add_group",
+        "content_type_id": 3,
+        "id": 9,
+        "name": "Can add group"
+    },
+    {
+        "codename": "change_group",
+        "content_type_id": 3,
+        "id": 10,
+        "name": "Can change group"
+    },
+    {
+        "codename": "delete_group",
+        "content_type_id": 3,
+        "id": 11,
+        "name": "Can delete group"
+    },
+    {
+        "codename": "view_group",
+        "content_type_id": 3,
+        "id": 12,
+        "name": "Can view group"
+    },
+    {
+        "codename": "add_user",
+        "content_type_id": 4,
+        "id": 13,
+        "name": "Can add user"
+    },
+    {
+        "codename": "change_user",
+        "content_type_id": 4,
+        "id": 14,
+        "name": "Can change user"
+    },
+    {
+        "codename": "delete_user",
+        "content_type_id": 4,
+        "id": 15,
+        "name": "Can delete user"
+    },
+    {
+        "codename": "view_user",
+        "content_type_id": 4,
+        "id": 16,
+        "name": "Can view user"
+    },
+    {
+        "codename": "add_contenttype",
+        "content_type_id": 5,
+        "id": 17,
+        "name": "Can add content type"
+    },
+    {
+        "codename": "change_contenttype",
+        "content_type_id": 5,
+        "id": 18,
+        "name": "Can change content type"
+    },
+    {
+        "codename": "delete_contenttype",
+        "content_type_id": 5,
+        "id": 19,
+        "name": "Can delete content type"
+    },
+    {
+        "codename": "view_contenttype",
+        "content_type_id": 5,
+        "id": 20,
+        "name": "Can view content type"
+    },
+    {
+        "codename": "add_session",
+        "content_type_id": 6,
+        "id": 21,
+        "name": "Can add session"
+    },
+    {
+        "codename": "change_session",
+        "content_type_id": 6,
+        "id": 22,
+        "name": "Can change session"
+    },
+    {
+        "codename": "delete_session",
+        "content_type_id": 6,
+        "id": 23,
+        "name": "Can delete session"
+    },
+    {
+        "codename": "view_session",
+        "content_type_id": 6,
+        "id": 24,
+        "name": "Can view session"
+    },
+    {
+        "codename": "add_actividades",
+        "content_type_id": 7,
+        "id": 25,
+        "name": "Can add actividades"
+    },
+    {
+        "codename": "change_actividades",
+        "content_type_id": 7,
+        "id": 26,
+        "name": "Can change actividades"
+    },
+    {
+        "codename": "delete_actividades",
+        "content_type_id": 7,
+        "id": 27,
+        "name": "Can delete actividades"
+    },
+    {
+        "codename": "view_actividades",
+        "content_type_id": 7,
+        "id": 28,
+        "name": "Can view actividades"
+    },
+    {
+        "codename": "add_donaciones",
+        "content_type_id": 8,
+        "id": 29,
+        "name": "Can add donaciones"
+    },
+    {
+        "codename": "change_donaciones",
+        "content_type_id": 8,
+        "id": 30,
+        "name": "Can change donaciones"
+    },
+    {
+        "codename": "delete_donaciones",
+        "content_type_id": 8,
+        "id": 31,
+        "name": "Can delete donaciones"
+    },
+    {
+        "codename": "view_donaciones",
+        "content_type_id": 8,
+        "id": 32,
+        "name": "Can view donaciones"
+    },
+    {
+        "codename": "add_historias",
+        "content_type_id": 9,
+        "id": 33,
+        "name": "Can add historias"
+    },
+    {
+        "codename": "change_historias",
+        "content_type_id": 9,
+        "id": 34,
+        "name": "Can change historias"
+    },
+    {
+        "codename": "delete_historias",
+        "content_type_id": 9,
+        "id": 35,
+        "name": "Can delete historias"
+    },
+    {
+        "codename": "view_historias",
+        "content_type_id": 9,
+        "id": 36,
+        "name": "Can view historias"
+    },
+    {
+        "codename": "add_inicio",
+        "content_type_id": 10,
+        "id": 37,
+        "name": "Can add inicio"
+    },
+    {
+        "codename": "change_inicio",
+        "content_type_id": 10,
+        "id": 38,
+        "name": "Can change inicio"
+    },
+    {
+        "codename": "delete_inicio",
+        "content_type_id": 10,
+        "id": 39,
+        "name": "Can delete inicio"
+    },
+    {
+        "codename": "view_inicio",
+        "content_type_id": 10,
+        "id": 40,
+        "name": "Can view inicio"
+    },
+    {
+        "codename": "add_nosotros",
+        "content_type_id": 11,
+        "id": 41,
+        "name": "Can add nosotros"
+    },
+    {
+        "codename": "change_nosotros",
+        "content_type_id": 11,
+        "id": 42,
+        "name": "Can change nosotros"
+    },
+    {
+        "codename": "delete_nosotros",
+        "content_type_id": 11,
+        "id": 43,
+        "name": "Can delete nosotros"
+    },
+    {
+        "codename": "view_nosotros",
+        "content_type_id": 11,
+        "id": 44,
+        "name": "Can view nosotros"
+    },
+    {
+        "codename": "add_programas",
+        "content_type_id": 12,
+        "id": 45,
+        "name": "Can add programas"
+    },
+    {
+        "codename": "change_programas",
+        "content_type_id": 12,
+        "id": 46,
+        "name": "Can change programas"
+    },
+    {
+        "codename": "delete_programas",
+        "content_type_id": 12,
+        "id": 47,
+        "name": "Can delete programas"
+    },
+    {
+        "codename": "view_programas",
+        "content_type_id": 12,
+        "id": 48,
+        "name": "Can view programas"
+    },
+    {
+        "codename": "add_seccion",
+        "content_type_id": 13,
+        "id": 49,
+        "name": "Can add seccion"
+    },
+    {
+        "codename": "change_seccion",
+        "content_type_id": 13,
+        "id": 50,
+        "name": "Can change seccion"
+    },
+    {
+        "codename": "delete_seccion",
+        "content_type_id": 13,
+        "id": 51,
+        "name": "Can delete seccion"
+    },
+    {
+        "codename": "view_seccion",
+        "content_type_id": 13,
+        "id": 52,
+        "name": "Can view seccion"
+    },
+    {
+        "codename": "add_articulos",
+        "content_type_id": 14,
+        "id": 53,
+        "name": "Can add Artículo"
+    },
+    {
+        "codename": "change_articulos",
+        "content_type_id": 14,
+        "id": 54,
+        "name": "Can change Artículo"
+    },
+    {
+        "codename": "delete_articulos",
+        "content_type_id": 14,
+        "id": 55,
+        "name": "Can delete Artículo"
+    },
+    {
+        "codename": "view_articulos",
+        "content_type_id": 14,
+        "id": 56,
+        "name": "Can view Artículo"
+    },
+    {
+        "codename": "add_donacionescbu",
+        "content_type_id": 15,
+        "id": 57,
+        "name": "Can add DonaciónCBU"
+    },
+    {
+        "codename": "change_donacionescbu",
+        "content_type_id": 15,
+        "id": 58,
+        "name": "Can change DonaciónCBU"
+    },
+    {
+        "codename": "delete_donacionescbu",
+        "content_type_id": 15,
+        "id": 59,
+        "name": "Can delete DonaciónCBU"
+    },
+    {
+        "codename": "view_donacionescbu",
+        "content_type_id": 15,
+        "id": 60,
+        "name": "Can view DonaciónCBU"
+    }
+]

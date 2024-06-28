@@ -1,0 +1,20 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'core/css/programas.css' %}">
+{% endblock %}
+
+{% block content %}
+    <section id="programas">
+        
+        <div class="card">
+            <h2>¡Nuestros programas!</h2>
+            <p>{{ programas.contenido|safe }}</p>
+        </div>
+        
+        <div class="card">
+            <h3>Información extra:</h3>
+            <p>{{ programas.info|safe }}</p>
+        </div>
+{% endblock %}

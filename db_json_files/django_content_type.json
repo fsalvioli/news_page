@@ -1,0 +1,77 @@
+[
+    {
+        "app_label": "admin",
+        "id": 1,
+        "model": "logentry"
+    },
+    {
+        "app_label": "auth",
+        "id": 2,
+        "model": "permission"
+    },
+    {
+        "app_label": "auth",
+        "id": 3,
+        "model": "group"
+    },
+    {
+        "app_label": "auth",
+        "id": 4,
+        "model": "user"
+    },
+    {
+        "app_label": "contenttypes",
+        "id": 5,
+        "model": "contenttype"
+    },
+    {
+        "app_label": "sessions",
+        "id": 6,
+        "model": "session"
+    },
+    {
+        "app_label": "core",
+        "id": 7,
+        "model": "actividades"
+    },
+    {
+        "app_label": "core",
+        "id": 8,
+        "model": "donaciones"
+    },
+    {
+        "app_label": "core",
+        "id": 9,
+        "model": "historias"
+    },
+    {
+        "app_label": "core",
+        "id": 10,
+        "model": "inicio"
+    },
+    {
+        "app_label": "core",
+        "id": 11,
+        "model": "nosotros"
+    },
+    {
+        "app_label": "core",
+        "id": 12,
+        "model": "programas"
+    },
+    {
+        "app_label": "core",
+        "id": 13,
+        "model": "seccion"
+    },
+    {
+        "app_label": "core",
+        "id": 14,
+        "model": "articulos"
+    },
+    {
+        "app_label": "core",
+        "id": 15,
+        "model": "donacionescbu"
+    }
+]

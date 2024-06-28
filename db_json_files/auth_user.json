@@ -1,0 +1,15 @@
+[
+    {
+        "date_joined": "2024-06-10 16:51:38.140248",
+        "email": "docente@gmail.com",
+        "first_name": "",
+        "id": 1,
+        "is_active": 1,
+        "is_staff": 1,
+        "is_superuser": 1,
+        "last_login": "2024-06-10 16:52:19.961263",
+        "last_name": "",
+        "password": "pbkdf2_sha256$600000$sicjFS5q3grGKBUcsXcfgC$QzOUf5saUu+7CnPRIFc9qFksoRM69TAStYEgpkqkHfM=",
+        "username": "docente"
+    }
+]

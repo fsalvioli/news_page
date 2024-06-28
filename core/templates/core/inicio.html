@@ -1,0 +1,50 @@
+<!-- inicio.html -->
+{% extends 'core/base.html' %}
+{% load static %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'core/css/inicio.css' %}">
+{% endblock %}
+
+{% block content %}
+    <!-- Sección de Inicio -->
+    <section id="inicio">
+        <img src="{{ inicio.imagen.url }}" alt="Imagen de inicio">
+        
+        <div class="card">
+            <h2>Bienvenidos a FUTURAR</h2>
+            <p>{{ inicio.mensaje|safe }}</p>
+        </div>
+        
+        <div class="card">
+            <h3>¿Qué ofrecemos?</h3>
+            <p>{{ inicio.ofertas|safe }}</p>
+        </div>
+        
+        <ul>
+            <li><a href="{% url 'inicio' %}">
+                <img src="{% static 'images/001-inicio.png' %}" alt="Icono Inicio">
+            </a></li>
+            <li><a href="{% url 'nosotros' %}">
+                <img src="{% static 'images/002-nosotros.png' %}" alt="Icono Nosotros">
+            </a></li>
+            <li><a href="{% url 'programas' %}">
+                <img src="{% static 'images/003-programas.png' %}" alt="Icono Programas">
+            </a></li>
+            <li><a href="{% url 'actividades' %}">
+                <img src="{% static 'images/004-actividades.png' %}" alt="Icono Actividades">
+            </a></li>
+            <li><a href="{% url 'historias' %}">
+                <img src="{% static 'images/005-historias.png' %}" alt="Icono Historias">
+            </a></li>
+            <li><a href="{% url 'articulos' %}">
+                <img src="{% static 'images/006-articulos.png' %}" alt="Icono Articulos">
+            </a></li>
+            <li><a href="{% url 'donaciones' %}">
+                <img src="{% static 'images/007-donaciones.png' %}" alt="Icono Donaciones">
+            </a></li>
+            <li><a href="{% url 'contacto' %}">
+                <img src="{% static 'images/008-contacto.png' %}" alt="Icono Contacto">
+            </a></li>
+        </ul>
+    </section>
+{% endblock %}

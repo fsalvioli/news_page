@@ -1,0 +1,29 @@
+<!-- historias.html -->
+{% extends 'core/base.html' %}
+{% load static %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'core/css/historias.css' %}">
+{% endblock %}
+
+{% block content %}
+    <!-- Sección de Historias -->
+    <section id="historias">
+        {% for historia in historias %}
+            <div class="card">
+                <h2>{{ historia.titulo }}</h2>
+                <div class="card-content">
+                    {% if historia.imagen %}
+                        <img src="{{ historia.imagen.url }}" alt="{{ historia.titulo }}">
+                    {% endif %}
+                    <p>{{ historia.testimonios|safe }}</p>
+                    {% if historia.enlaces %}
+                        <a href="{{ historia.enlaces }}" class="btn">Más Información</a>
+                    {% endif %}
+                    {% if historia.get_embed_url %}
+                        <iframe src="{{ historia.get_embed_url }}" frameborder="0" allowfullscreen></iframe>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+{% endblock %}

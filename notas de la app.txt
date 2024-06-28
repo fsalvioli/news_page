@@ -1,0 +1,47 @@
+la idea es hacer una pagina de noticias donde en la pagina principal haya un menú de navegación para ir a los diferentes lugares de la pagina. El menú tiene que tener los siguientes links: 
+Inicio
+Nosotros
+Programas
+Actividades
+Historias
+Artículos, notas, ideas para compartir
+Donaciones
+Contacto
+La sección de Inicio:
+Imagen representativa de personas con discapacidad trabajando felizmente
+Mensaje de bienvenida y breve descripción de la misión de la fundación
+¿Qué ofrecemos?
+Íconos para cada una de las secciones del menú de navegación, dado que todo esta en la misma pagina pero uno seguido del otro en forma descendente. 
+La sección de Nosotros:
+Historia y origen de la fundación
+Misión, visión y valores
+Equipo de trabajo y colaboradores (fotos y videos)
+Testimonios de beneficiarios y aliados
+La sección de Programas:
+Descripción detallada de los programas ofrecidos (3)
+Información sobre cómo participar en los programas
+La sección de Actividades:
+Descripción detallada de las actividades programadas
+Información sobre cómo participar en las actividades
+La sección de Historias:
+Testimonios y casos de personas con discapacidad que buscan trabajo o que podrían trabajar
+Fotos o vídeos inspiradores
+Enlaces para leer más historias
+La sección de Articulos, notas e ideas:
+Artículos informativos sobre inclusión laboral, discapacidad, noticias relevantes, consejos para empresas, etc.
+Ícono para suscribirse al boletín informativo
+Links que lleven a las publicaciones de FUTURAR en las redes sociales
+La sección de Donaciones:
+Información sobre cómo donar 
+Información del impacto que tienen las donaciones en la fundación
+Formulario de donación con opciones de cantidad y métodos de pago
+Historial de donaciones y testimonios de donantes
+La sección de contacto:
+Formulario de contacto con nombre, correo electrónico y mensaje
+Información de contacto (dirección, teléfono, correo electrónico)
+Enlaces a redes sociales
+
+No importa el css todavía. Además tiene que Ícono de accesibilidad para ajustar el tamaño del texto, contraste según las necesidades del usuario.
+
+user = docente
+pass = docente2024

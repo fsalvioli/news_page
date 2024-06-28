@@ -1,0 +1,58 @@
+[
+    {
+        "name": "django_migrations",
+        "seq": 28
+    },
+    {
+        "name": "django_admin_log",
+        "seq": 38
+    },
+    {
+        "name": "django_content_type",
+        "seq": 15
+    },
+    {
+        "name": "auth_permission",
+        "seq": 60
+    },
+    {
+        "name": "auth_group",
+        "seq": 0
+    },
+    {
+        "name": "auth_user",
+        "seq": 1
+    },
+    {
+        "name": "core_inicio",
+        "seq": 1
+    },
+    {
+        "name": "core_donacionescbu",
+        "seq": 1
+    },
+    {
+        "name": "core_actividades",
+        "seq": 1
+    },
+    {
+        "name": "core_historias",
+        "seq": 2
+    },
+    {
+        "name": "core_nosotros",
+        "seq": 1
+    },
+    {
+        "name": "core_programas",
+        "seq": 1
+    },
+    {
+        "name": "core_articulos",
+        "seq": 3
+    },
+    {
+        "name": "core_donaciones",
+        "seq": 1
+    }
+]

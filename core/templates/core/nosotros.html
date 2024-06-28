@@ -1,0 +1,33 @@
+<!-- nosotros.html -->
+{% extends 'core/base.html' %}
+{% load static %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'core/css/nosotros.css' %}">
+{% endblock %}
+
+{% block content %}
+    <!-- Sección de nosotros -->
+    <section id="nosotros">
+        <img src="{{ nosotros.imagen.url }}" alt="Nosotros">
+        
+        <div class="card">
+            <h2>Acerca de nosotros</h2>
+            <p>{{ nosotros.contenido|safe }}</p>
+        </div>
+        
+        <div class="card">
+            <h3>Nuestros valores y misión:</h3>
+            <p>{{ nosotros.mision|safe }}</p>
+        </div>
+
+        <div class="video-card">
+            {% if nosotros.get_embed_url %}
+                <div class="video-container">
+                    <iframe src="{{ nosotros.get_embed_url }}" frameborder="0" allowfullscreen></iframe>
+                </div>
+            {% else %}
+                <p>No se encontró el video.</p>
+            {% endif %}
+        </div>
+    </section>
+{% endblock %}

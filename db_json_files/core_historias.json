@@ -1,0 +1,18 @@
+[
+    {
+        "enlaces": "https://es.lipsum.com",
+        "id": 1,
+        "imagen": "historias/1.png",
+        "testimonios": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+        "titulo": "Historia de Juan",
+        "video": "https://www.youtube.com/watch?v=I0mbFH4SN7o"
+    },
+    {
+        "enlaces": "https://www.audiotienda.co",
+        "id": 2,
+        "imagen": "historias/corazon.png",
+        "testimonios": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+        "titulo": "Historia de María",
+        "video": "https://www.youtube.com/watch?v=I0mbFH4SN7o"
+    }
+]

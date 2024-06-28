@@ -1,0 +1,50 @@
+/* inicio.css */
+
+#inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#inicio img:first-of-type {
+    width: 100%;
+    max-width: 450px; /* Ajusta el tamaño máximo de la imagen */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #ffbf91; /* Color naranja suave */
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#inicio ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    list-style-type: none;
+    margin: 20px 0 0 0;
+}
+
+#inicio ul img {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    margin-right: 20px;
+    border-radius: 10px;
+    object-fit: cover; /* Ajusta la imagen para cubrir el área sin distorsionar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#inicio ul img:hover {
+    transform: scale(1.05); /* Efecto hover para agrandar ligeramente las imágenes */
+    transition: transform 0.3s ease;
+}

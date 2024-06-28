@@ -1,0 +1,15 @@
+name;seq
+django_migrations;28
+django_admin_log;38
+django_content_type;15
+auth_permission;60
+auth_group;0
+auth_user;1
+core_inicio;1
+core_donacionescbu;1
+core_actividades;1
+core_historias;2
+core_nosotros;1
+core_programas;1
+core_articulos;3
+core_donaciones;1

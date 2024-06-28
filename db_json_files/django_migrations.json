@@ -1,0 +1,170 @@
+[
+    {
+        "app": "contenttypes",
+        "applied": "2024-06-10 16:23:24.853266",
+        "id": 1,
+        "name": "0001_initial"
+    },
+    {
+        "app": "auth",
+        "applied": "2024-06-10 16:23:24.874679",
+        "id": 2,
+        "name": "0001_initial"
+    },
+    {
+        "app": "admin",
+        "applied": "2024-06-10 16:23:24.893732",
+        "id": 3,
+        "name": "0001_initial"
+    },
+    {
+        "app": "admin",
+        "applied": "2024-06-10 16:23:24.908998",
+        "id": 4,
+        "name": "0002_logentry_remove_auto_add"
+    },
+    {
+        "app": "admin",
+        "applied": "2024-06-10 16:23:24.920598",
+        "id": 5,
+        "name": "0003_logentry_add_action_flag_choices"
+    },
+    {
+        "app": "contenttypes",
+        "applied": "2024-06-10 16:23:24.939836",
+        "id": 6,
+        "name": "0002_remove_content_type_name"
+    },
+    {
+        "app": "auth",
+        "applied": "2024-06-10 16:23:24.955958",
+        "id": 7,
+        "name": "0002_alter_permission_name_max_length"
+    },
+    {
+        "app": "auth",
+        "applied": "2024-06-10 16:23:24.970876",
+        "id": 8,
+        "name": "0003_alter_user_email_max_length"
+    },
+    {
+        "app": "auth",
+        "applied": "2024-06-10 16:23:24.979890",
+        "id": 9,
+        "name": "0004_alter_user_username_opts"
+    },
+    {
+        "app": "auth",
+        "applied": "2024-06-10 16:23:24.994356",
+        "id": 10,
+        "name": "0005_alter_user_last_login_null"
+    },
+    {
+        "app": "auth",
+        "applied": "2024-06-10 16:23:25.000107",
+        "id": 11,
+        "name": "0006_require_contenttypes_0002"
+    },
+    {
+        "app": "auth",
+        "applied": "2024-06-10 16:23:25.010783",
+        "id": 12,
+        "name": "0007_alter_validators_add_error_messages"
+    },
+    {
+        "app": "auth",
+        "applied": "2024-06-10 16:23:25.024918",
+        "id": 13,
+        "name": "0008_alter_user_username_max_length"
+    },
+    {
+        "app": "auth",
+        "applied": "2024-06-10 16:23:25.038708",
+        "id": 14,
+        "name": "0009_alter_user_last_name_max_length"
+    },
+    {
+        "app": "auth",
+        "applied": "2024-06-10 16:23:25.052295",
+        "id": 15,
+        "name": "0010_alter_group_name_max_length"
+    },
+    {
+        "app": "auth",
+        "applied": "2024-06-10 16:23:25.062304",
+        "id": 16,
+        "name": "0011_update_proxy_permissions"
+    },
+    {
+        "app": "auth",
+        "applied": "2024-06-10 16:23:25.077798",
+        "id": 17,
+        "name": "0012_alter_user_first_name_max_length"
+    },
+    {
+        "app": "sessions",
+        "applied": "2024-06-10 16:23:25.089965",
+        "id": 18,
+        "name": "0001_initial"
+    },
+    {
+        "app": "core",
+        "applied": "2024-06-10 16:50:40.139308",
+        "id": 19,
+        "name": "0001_initial"
+    },
+    {
+        "app": "core",
+        "applied": "2024-06-10 17:38:11.425182",
+        "id": 20,
+        "name": "0002_alter_actividades_options_alter_donaciones_options_and_more"
+    },
+    {
+        "app": "core",
+        "applied": "2024-06-12 13:52:08.695139",
+        "id": 21,
+        "name": "0003_inicio_ofertas_seccion_icono"
+    },
+    {
+        "app": "core",
+        "applied": "2024-06-12 14:42:19.311025",
+        "id": 22,
+        "name": "0004_articulos_delete_seccion_alter_nosotros_options"
+    },
+    {
+        "app": "core",
+        "applied": "2024-06-17 20:31:43.119883",
+        "id": 23,
+        "name": "0005_donacionescbu_and_more"
+    },
+    {
+        "app": "core",
+        "applied": "2024-06-17 20:38:25.228028",
+        "id": 24,
+        "name": "0006_alter_donacionescbu_cbu"
+    },
+    {
+        "app": "core",
+        "applied": "2024-06-18 15:17:13.359609",
+        "id": 25,
+        "name": "0007_alter_donacionescbu_cbu"
+    },
+    {
+        "app": "core",
+        "applied": "2024-06-21 23:29:09.249550",
+        "id": 26,
+        "name": "0008_alter_actividades_descripcion_alter_actividades_info_and_more"
+    },
+    {
+        "app": "core",
+        "applied": "2024-06-22 14:37:54.510114",
+        "id": 27,
+        "name": "0009_alter_historias_options_articulos_imagenes"
+    },
+    {
+        "app": "core",
+        "applied": "2024-06-22 15:05:19.684944",
+        "id": 28,
+        "name": "0010_donaciones_donar"
+    }
+]

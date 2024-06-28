@@ -1,0 +1,11 @@
+[
+    {
+        "alias": "prueba.cbu.test",
+        "banco": "Provincia",
+        "cbu": "112233445566778899112233",
+        "id": 1,
+        "numero": "999.111.666666.7",
+        "sucursal": "Caseros",
+        "tipo": "Cuenta corriente en pesos"
+    }
+]

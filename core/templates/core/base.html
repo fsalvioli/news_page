@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUTURAR | Inicio</title>
+    <!-- Aquí irán los enlaces de CSS y JS -->
+    <link rel="icon" type="image/png" href="{% static 'images/logo.png' %}">
+    <link rel="stylesheet" href="{% static 'core/css/global.css' %}">
+    
+    <script>
+        function adjustTextSize(size) {
+            document.body.style.fontSize = size + 'em';
+            localStorage.setItem('fontSize', size);
+        }
+    
+        function toggleContrast() {
+            document.body.classList.toggle('high-contrast');
+            const isHighContrast = document.body.classList.contains('high-contrast');
+            localStorage.setItem('highContrast', isHighContrast ? 'true' : 'false');
+        }
+    
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('open');
+        }
+    
+        function closeMenuIfClickedOutside(event) {
+            var menu = document.getElementById('menu');
+            var menuToggle = document.querySelector('.menu-toggle');
+            if (menu.classList.contains('open') && !menu.contains(event.target) && !menuToggle.contains(event.target)) {
+                menu.classList.remove('open');
+            }
+        }
+    
+        document.addEventListener('click', closeMenuIfClickedOutside);
+    
+        window.onload = function() {
+            const fontSize = localStorage.getItem('fontSize');
+            if (fontSize) {
+                document.body.style.fontSize = fontSize + 'em';
+            }
+            const highContrast = localStorage.getItem('highContrast');
+            if (highContrast === 'true') {
+                document.body.classList.add('high-contrast');
+            }
+        }
+    </script>
+    
+</head>
+<body>
+    <header class="header-wrapper">
+        <div class="header-card">
+            <!-- Contenido del header -->
+            <div class="logo-container">
+                <img src="{% static 'images/logo.png' %}" alt="Logo de tu empresa">
+            </div>
+            <div class="header-content">
+                <h2>Fundación</h2>
+                <h1>FUTURAR</h1>
+                <p>Sin barreras</p>
+            </div>
+        </div>
+        <div class="menu-card" onclick="toggleMenu()">
+            <div class="menu-toggle">
+                <button>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+            <ul id="menu" class="menu">
+                <li><a href="{% url 'inicio' %}">
+                    <img src="{% static 'images/001-inicio.png' %}" alt="Icono Inicio">
+                    Inicio
+                </a></li>
+                <li><a href="{% url 'nosotros' %}">
+                    <img src="{% static 'images/002-nosotros.png' %}" alt="Icono Nosotros">
+                    Nosotros
+                </a></li>
+                <li><a href="{% url 'programas' %}">
+                    <img src="{% static 'images/003-programas.png' %}" alt="Icono Programas">
+                    Programas
+                </a></li>
+                <li><a href="{% url 'actividades' %}">
+                    <img src="{% static 'images/004-actividades.png' %}" alt="Icono Actividades">
+                    Actividades
+                </a></li>
+                <li><a href="{% url 'historias' %}">
+                    <img src="{% static 'images/005-historias.png' %}" alt="Icono Historias">
+                    Historias
+                </a></li>
+                <li><a href="{% url 'articulos' %}">
+                    <img src="{% static 'images/006-articulos.png' %}" alt="Icono Articulos">
+                    Articulos
+                </a></li>
+                <li><a href="{% url 'donaciones' %}">
+                    <img src="{% static 'images/007-donaciones.png' %}" alt="Icono Donaciones">
+                    Donaciones
+                </a></li>
+                <li><a href="{% url 'contacto' %}">
+                    <img src="{% static 'images/008-contacto.png' %}" alt="Icono Contacto">
+                    Contacto
+                </a></li>
+            </ul>
+        </div>
+    </header>
+    <nav>
+        <div class="accessibility-controls">
+            <button onclick="adjustTextSize(1)">A</button>
+            <button onclick="adjustTextSize(1.8)">A+</button>
+            <button onclick="toggleContrast()">🌙</button>
+        </div>
+    </nav>
+   
+    {% block content %}
+    {% endblock %}
+    {% block extra_css %}
+    <!-- Aquí se incluirán estilos adicionales para las páginas específicas -->
+    {% endblock %}
+    <footer>
+        <div class="footer-section">
+            <p>&copy; 2024 Fundación FUTURAR. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

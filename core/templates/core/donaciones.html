@@ -1,0 +1,90 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'core/css/donaciones.css' %}">
+{% endblock %}
+
+{% block content %}
+    <section id="donaciones">
+        <h1>{{ donaciones.titulo }}</h1>     
+        <div class="card">
+            <h2>Impacto de las Donaciones</h2>
+            <p>{{ donaciones.info_impacto|safe }}</p>
+        </div>
+
+        <div class="card">
+            <h2>Historial de Donaciones</h2>
+            <p>{{ donaciones.historial|safe }}</p>
+        </div>
+
+        <div class="card">
+            <h2>Realizar una Donación</h2>
+            <p>{{ donaciones.donar|safe }}</p>
+            <button id="info-btn">Mostrar Información del CBU</button>
+            <div id="cbu-info" style="display: none;">
+                <h3>Información del CBU</h3>
+                {% for donacion_cbu in donaciones_cbu %}
+                    <ul>
+                        <li><strong>Banco:</strong> {{ donacion_cbu.banco }}</li>
+                        <li><strong>Tipo:</strong> {{ donacion_cbu.tipo }}</li>
+                        <li><strong>Número:</strong> {{ donacion_cbu.numero }}</li>
+                        <li><strong>Sucursal:</strong> {{ donacion_cbu.sucursal }}</li>
+                        <li><strong>CBU:</strong> {{ donacion_cbu.cbu }}</li>
+                        <li><strong>Alias:</strong> {{ donacion_cbu.alias }}</li>
+                    </ul>
+                {% endfor %}
+            </div>
+            <button id="otro-btn">¿Querés realizar otro tipo de donación?</button>
+            <div id="otro-info" style="display: none;">
+                <div class="contact-container">
+                    <h1>Mandamos un mail con lo que queres donar!</h1>
+                    {% if mensaje_exito %}
+                        <p class="success-message">¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.</p>
+                    {% endif %}
+                    <form method="post" class="contact-form">
+                        {% csrf_token %}
+                        {% for field in form %}
+                            <div class="form-field">
+                                {{ field.label_tag }}
+                                {{ field }}
+                                {% if field.errors %}
+                                    <ul class="errorlist">
+                                        {% for error in field.errors %}
+                                            <li>{{ error }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+                            </div>
+                        {% endfor %}
+                        <button type="submit" class="submit-btn">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('info-btn').addEventListener('click', function() {
+            var cbuInfo = document.getElementById('cbu-info');
+            if (cbuInfo.style.display === 'none') {
+                cbuInfo.style.display = 'block';
+                this.textContent = 'Ocultar Información del CBU';
+            } else {
+                cbuInfo.style.display = 'none';
+                this.textContent = 'Mostrar Información del CBU';
+            }
+        });
+
+        document.getElementById('otro-btn').addEventListener('click', function() {
+            var otroInfo = document.getElementById('otro-info');
+            if (otroInfo.style.display === 'none') {
+                otroInfo.style.display = 'block';
+                this.textContent = '¿Querés realizar otro tipo de donación?';
+            } else {
+                otroInfo.style.display = 'none';
+                this.textContent = '¿Querés realizar otro tipo de donación?';
+            }
+        });
+    </script>
+{% endblock %}

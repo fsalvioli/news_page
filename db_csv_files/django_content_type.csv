@@ -1,0 +1,16 @@
+id;app_label;model
+1;admin;logentry
+2;auth;permission
+3;auth;group
+4;auth;user
+5;contenttypes;contenttype
+6;sessions;session
+7;core;actividades
+8;core;donaciones
+9;core;historias
+10;core;inicio
+11;core;nosotros
+12;core;programas
+13;core;seccion
+14;core;articulos
+15;core;donacionescbu

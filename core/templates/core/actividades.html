@@ -1,0 +1,21 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'core/css/actividades.css' %}">
+{% endblock %}
+
+{% block content %}
+    <section id="actividades">
+        <h3 class="card">¡Actividades que ofrecemos!</h3>
+        {% for actividad in actividades %}
+            <div class="card">
+                <p>{{ actividad.descripcion|safe }}</p>
+            </div>
+            
+            <div class="card">
+                <p>{{ actividad.info|safe }}</p>
+            </div>
+        {% endfor %}
+    </section>
+{% endblock %}
