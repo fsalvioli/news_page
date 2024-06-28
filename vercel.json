@@ -1,8 +1,26 @@
-{ "version": 2, "builds": [
-     { "src": "news_page/wsgi.py", "use": "@vercel/python", "config": {
-         "maxLambdaSize": "15mb", "runtime": "python3.9" } },
-     { "src": "build_files.sh", "use": "@vercel/static-build", "config": { "distDir": "staticfiles" } } 
-    ],
-      "routes": [ { "src": "/static/(.*)", "dest": "/static/$1" }, { "src": "/(.*)", "dest": "news_page/wsgi.py" } ],
-       "outputDirectory": "staticfiles" 
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": ".",
+      "use": "@vercel/python"
     }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "vc__handler__python"
+    }
+  ],
+  "env": {
+    "DJANGO_SETTINGS_MODULE": "news_page.settings"
+  },
+  "functions": {
+    "vc__handler__python": {
+      "runtime": "python3.9",
+      "environment": {
+        "DJANGO_SETTINGS_MODULE": "news_page.settings"
+      }
+    }
+  }
+}
