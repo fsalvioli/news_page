@@ -9,6 +9,5 @@
             "src": "/(.*)",
             "dest": "news_page/wsgi.py"
         }
-    ],
-    "clean": true
+    ]
 }
